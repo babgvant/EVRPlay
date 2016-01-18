@@ -1,0 +1,436 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="14.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{20FBEEA4-92C2-409E-9448-219CE60C0041}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>EVRPlay</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>babgvant.EVRPlay</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE;DEBUG;USING_NET20 ALLOW_UNTESTED_INTERFACES</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE;USING_NET20 ALLOW_UNTESTED_INTERFACES</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.WindowsAPICodePack, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files\Intel\Media SDK 2013\MediaSDK2013\thirdparty\managed\Microsoft.WindowsAPICodePack.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAPICodePack.Shell, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files\Intel\Media SDK 2013\MediaSDK2013\thirdparty\managed\Microsoft.WindowsAPICodePack.Shell.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApartmentStateSwitcher.cs" />
+    <Compile Include="AppCommand.cs" />
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BrowserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BrowserForm.Designer.cs">
+      <DependentUpon>BrowserForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientForm.Designer.cs">
+      <DependentUpon>ClientForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Commercials.cs" />
+    <Compile Include="Common.cs" />
+    <Compile Include="CoreAudioApi\AudioEndpointVolume.cs" />
+    <Compile Include="CoreAudioApi\AudioEndpointVolumeCallback.cs" />
+    <Compile Include="CoreAudioApi\AudioEndpointVolumeChannel.cs" />
+    <Compile Include="CoreAudioApi\AudioEndpointVolumeChannels.cs" />
+    <Compile Include="CoreAudioApi\AudioEndpointVolumeNotificationDelegate.cs" />
+    <Compile Include="CoreAudioApi\AudioEndpointVolumeStepInformation.cs" />
+    <Compile Include="CoreAudioApi\AudioEndPointVolumeVolumeRange.cs" />
+    <Compile Include="CoreAudioApi\AudioMeterInformation.cs" />
+    <Compile Include="CoreAudioApi\AudioMeterInformationChannels.cs" />
+    <Compile Include="CoreAudioApi\AudioSessionControl.cs" />
+    <Compile Include="CoreAudioApi\AudioSessionDisconnectReason.cs" />
+    <Compile Include="CoreAudioApi\AudioSessionManager.cs" />
+    <Compile Include="CoreAudioApi\AudioSessionState.cs" />
+    <Compile Include="CoreAudioApi\AudioVolumeNotificationData.cs" />
+    <Compile Include="CoreAudioApi\EDataFlow.cs" />
+    <Compile Include="CoreAudioApi\EDeviceState.cs" />
+    <Compile Include="CoreAudioApi\EEndpointHardwareSupport.cs" />
+    <Compile Include="CoreAudioApi\ERole.cs" />
+    <Compile Include="CoreAudioApi\Interfaces\AUDIO_VOLUME_NOTIFICATION_DATA.cs" />
+    <Compile Include="CoreAudioApi\Interfaces\Blob.cs" />
+    <Compile Include="CoreAudioApi\Interfaces\CLSCTX.cs" />
+    <Compile Include="CoreAudioApi\Interfaces\eStgmAccess.cs" />
+    <Compile Include="CoreAudioApi\Interfaces\IAudioEndpointVolume.cs" />
+    <Compile Include="CoreAudioApi\Interfaces\IAudioEndpointVolumeCallback.cs" />
+    <Compile Include="CoreAudioApi\Interfaces\IAudioMeterInformation.cs" />
+    <Compile Include="CoreAudioApi\Interfaces\IAudioPeakMeter.cs" />
+    <Compile Include="CoreAudioApi\Interfaces\IAudioSessionControl2.cs" />
+    <Compile Include="CoreAudioApi\Interfaces\IAudioSessionEnumerator.cs" />
+    <Compile Include="CoreAudioApi\Interfaces\IAudioSessionEvents.cs" />
+    <Compile Include="CoreAudioApi\Interfaces\IAudioSessionManager2.cs" />
+    <Compile Include="CoreAudioApi\Interfaces\IMMDevice.cs" />
+    <Compile Include="CoreAudioApi\Interfaces\IMMDeviceCollection.cs" />
+    <Compile Include="CoreAudioApi\Interfaces\IMMDeviceEnumerator.cs" />
+    <Compile Include="CoreAudioApi\Interfaces\IMMEndpoint.cs" />
+    <Compile Include="CoreAudioApi\Interfaces\IPropertyStore.cs" />
+    <Compile Include="CoreAudioApi\Interfaces\ISimpleAudioVolume.cs" />
+    <Compile Include="CoreAudioApi\MMDevice.cs" />
+    <Compile Include="CoreAudioApi\MMDeviceCollection.cs" />
+    <Compile Include="CoreAudioApi\MMDeviceEnumerator.cs" />
+    <Compile Include="CoreAudioApi\PKEY.cs" />
+    <Compile Include="CoreAudioApi\PropertyKey.cs" />
+    <Compile Include="CoreAudioApi\PropertyStore.cs" />
+    <Compile Include="CoreAudioApi\PropertyStoreProperty.cs" />
+    <Compile Include="CoreAudioApi\PropVariant.cs" />
+    <Compile Include="CoreAudioApi\SessionCollection.cs" />
+    <Compile Include="CoreAudioApi\SimpleAudioVolume.cs" />
+    <Compile Include="DirectShowLib\amstream.cs" />
+    <Compile Include="DirectShowLib\amvideo.cs" />
+    <Compile Include="DirectShowLib\atscpsipparser.cs" />
+    <Compile Include="DirectShowLib\austream.cs" />
+    <Compile Include="DirectShowLib\AxCore.cs" />
+    <Compile Include="DirectShowLib\AXExtend.cs" />
+    <Compile Include="DirectShowLib\BDAIface.cs" />
+    <Compile Include="DirectShowLib\Bdatif.cs" />
+    <Compile Include="DirectShowLib\BDATypes.cs" />
+    <Compile Include="DirectShowLib\Control.cs" />
+    <Compile Include="DirectShowLib\DES.cs" />
+    <Compile Include="DirectShowLib\DevEnum.cs" />
+    <Compile Include="DirectShowLib\DMODShow.cs" />
+    <Compile Include="DirectShowLib\dsattrib.cs" />
+    <Compile Include="DirectShowLib\DsUtils.cs" />
+    <Compile Include="DirectShowLib\dvbsiparser.cs" />
+    <Compile Include="DirectShowLib\DVDIf.cs" />
+    <Compile Include="DirectShowLib\DynGraph.cs" />
+    <Compile Include="DirectShowLib\encdec.cs" />
+    <Compile Include="DirectShowLib\EvCode.cs" />
+    <Compile Include="DirectShowLib\IL21Dec.cs" />
+    <Compile Include="DirectShowLib\MediaObj.cs" />
+    <Compile Include="DirectShowLib\MediaParam.cs" />
+    <Compile Include="DirectShowLib\Misc.cs" />
+    <Compile Include="DirectShowLib\Mixerocx.cs" />
+    <Compile Include="DirectShowLib\mmstream.cs" />
+    <Compile Include="DirectShowLib\mpconfig.cs" />
+    <Compile Include="DirectShowLib\Mpeg2Data.cs" />
+    <Compile Include="DirectShowLib\mpeg2psiparser.cs" />
+    <Compile Include="DirectShowLib\Mpeg2Structs.cs" />
+    <Compile Include="DirectShowLib\other.cs" />
+    <Compile Include="DirectShowLib\PlayList.cs" />
+    <Compile Include="DirectShowLib\QEdit.cs" />
+    <Compile Include="DirectShowLib\qnetwork.cs" />
+    <Compile Include="DirectShowLib\RegBag.cs" />
+    <Compile Include="DirectShowLib\Sbe.cs" />
+    <Compile Include="DirectShowLib\Tuner.cs" />
+    <Compile Include="DirectShowLib\TvRatings.cs" />
+    <Compile Include="DirectShowLib\Uuids.cs" />
+    <Compile Include="DirectShowLib\Vidcap.cs" />
+    <Compile Include="DirectShowLib\VidPort.cs" />
+    <Compile Include="DirectShowLib\Vmr9.cs" />
+    <Compile Include="DirectShowLib\VmRender.cs" />
+    <Compile Include="DownloadForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DownloadForm.Designer.cs">
+      <DependentUpon>DownloadForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EPDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EPDialog.Designer.cs">
+      <DependentUpon>EPDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EPInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EPInfo.Designer.cs">
+      <DependentUpon>EPInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EPTimedForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EPTimedForm.Designer.cs">
+      <DependentUpon>EPTimedForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EVRPlayListener.cs" />
+    <Compile Include="FileHistory.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>FileHistory.settings</DependentUpon>
+    </Compile>
+    <Compile Include="FileLogger.cs" />
+    <Compile Include="FilterBlocker.cs" />
+    <Compile Include="FilterGraphTools.cs" />
+    <Compile Include="IEVRCPSettings.cs" />
+    <Compile Include="Ipc\EpClient.cs" />
+    <Compile Include="Ipc\EpRemote.cs" />
+    <Compile Include="Ipc\EpServer.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MediaBrowser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MediaBrowser.Designer.cs">
+      <DependentUpon>MediaBrowser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MediaFoundation\Alt.cs" />
+    <Compile Include="MediaFoundation\dxvahd.cs" />
+    <Compile Include="MediaFoundation\EVR.cs" />
+    <Compile Include="MediaFoundation\Externs.cs" />
+    <Compile Include="MediaFoundation\mfcaptureengine.cs" />
+    <Compile Include="MediaFoundation\MFIdl.cs" />
+    <Compile Include="MediaFoundation\mfmediacapture.cs" />
+    <Compile Include="MediaFoundation\mfmediaengine.cs" />
+    <Compile Include="MediaFoundation\mfmp2dlna.cs" />
+    <Compile Include="MediaFoundation\MFObjects.cs" />
+    <Compile Include="MediaFoundation\MFPlay.cs" />
+    <Compile Include="MediaFoundation\MFReadWrite.cs" />
+    <Compile Include="MediaFoundation\mfsharingengine.cs" />
+    <Compile Include="MediaFoundation\MFTransform.cs" />
+    <Compile Include="MediaFoundation\MFUtils.cs" />
+    <Compile Include="MediaFoundation\misc.cs" />
+    <Compile Include="MediaFoundation\OpmApi.cs" />
+    <Compile Include="MediaFoundation\WMContainer.cs" />
+    <Compile Include="MessageForm.cs" />
+    <Compile Include="NativeMethods2.cs" />
+    <Compile Include="OpenUrlForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpenUrlForm.Designer.cs">
+      <DependentUpon>OpenUrlForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherVideo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherVideo.Designer.cs">
+      <DependentUpon>OtherVideo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Player.cs" />
+    <Compile Include="PlaySettings.cs" />
+    <Compile Include="PlaySettings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>PlaySettings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="ProgressForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProgressForm.Designer.cs">
+      <DependentUpon>ProgressForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RawInput.cs" />
+    <Compile Include="sageShowInfo.cs">
+      <DependentUpon>sageShowInfo.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SettingsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SettingsForm.Designer.cs">
+      <DependentUpon>SettingsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SPI.cs" />
+    <Compile Include="StopDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StopDialog.Designer.cs">
+      <DependentUpon>StopDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebBrowser2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Win32.cs" />
+    <Compile Include="WM.cs" />
+    <Compile Include="WMF\WMCore.cs" />
+    <Compile Include="WMF\WMDefs.cs" />
+    <Compile Include="WMF\WMUtils.cs" />
+    <EmbeddedResource Include="AboutBox.resx">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BrowserForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>BrowserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ClientForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DownloadForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DownloadForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EPDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>EPDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EPInfo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>EPInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EPTimedForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>EPTimedForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MediaBrowser.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MediaBrowser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpenUrlForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OpenUrlForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherVideo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OtherVideo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProgressForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettingsForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SettingsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StopDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>StopDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="FileHistory.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>FileHistory.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Package.bat" />
+    <None Include="PlaySettings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>PlaySettings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="readme.txt" />
+    <EmbeddedResource Include="sageShowInfo.xsd">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="sageShowInfo.xsc">
+      <DependentUpon>sageShowInfo.xsd</DependentUpon>
+    </None>
+    <None Include="sageShowInfo.xss">
+      <DependentUpon>sageShowInfo.xsd</DependentUpon>
+    </None>
+    <None Include="sageShowInfo.xsx">
+      <DependentUpon>sageShowInfo.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="license.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

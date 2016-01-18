@@ -1,0 +1,140 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="sageShowInfo">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="channelList" minOccurs="0" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="channel" minOccurs="0" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="channelName" type="xs:string" minOccurs="0" msdata:Ordinal="0" />
+										<xs:element name="channelDescription" type="xs:string" minOccurs="0" msdata:Ordinal="1" />
+										<xs:element name="channelNetwork" type="xs:string" minOccurs="0" msdata:Ordinal="2" />
+										<xs:element name="channelNumber" type="xs:string" minOccurs="0" msdata:Ordinal="3" />
+									</xs:sequence>
+									<xs:attribute name="channelId" type="xs:string" />
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="favoriteList" minOccurs="0" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="favorite" minOccurs="0" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="title" type="xs:string" minOccurs="0" msdata:Ordinal="0" />
+										<xs:element name="timeslot" type="xs:string" minOccurs="0" msdata:Ordinal="1" />
+										<xs:element name="channelName" type="xs:string" minOccurs="0" msdata:Ordinal="2" />
+										<xs:element name="firstRun" type="xs:string" minOccurs="0" msdata:Ordinal="3" />
+										<xs:element name="reRun" type="xs:string" minOccurs="0" msdata:Ordinal="4" />
+										<xs:element name="quality" type="xs:string" minOccurs="0" msdata:Ordinal="5" />
+										<xs:element name="startPadding" type="xs:string" minOccurs="0" msdata:Ordinal="6" />
+										<xs:element name="stopPadding" type="xs:string" minOccurs="0" msdata:Ordinal="7" />
+										<xs:element name="keepAtMost" type="xs:string" minOccurs="0" msdata:Ordinal="8" />
+										<xs:element name="autoDelete" type="xs:string" minOccurs="0" msdata:Ordinal="9" />
+									</xs:sequence>
+									<xs:attribute name="favoriteId" type="xs:string" />
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="showList" minOccurs="0" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="show" minOccurs="0" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="title" type="xs:string" minOccurs="0" msdata:Ordinal="0" />
+										<xs:element name="episode" type="xs:string" minOccurs="0" msdata:Ordinal="1" />
+										<xs:element name="category" type="xs:string" minOccurs="0" msdata:Ordinal="2" />
+										<xs:element name="subCategory" type="xs:string" minOccurs="0" msdata:Ordinal="3" />
+										<xs:element name="description" type="xs:string" minOccurs="0" msdata:Ordinal="4" />
+										<xs:element name="originalAirDate" type="xs:dateTime" minOccurs="0" msdata:Ordinal="6" />
+										<xs:element name="peopleList" minOccurs="0" maxOccurs="unbounded">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="person" nillable="true" minOccurs="0" maxOccurs="unbounded">
+														<xs:complexType>
+															<xs:simpleContent msdata:ColumnName="person_Text" msdata:Ordinal="1">
+																<xs:extension base="xs:string">
+																	<xs:attribute name="role" type="xs:string" />
+																</xs:extension>
+															</xs:simpleContent>
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="airing" minOccurs="0" maxOccurs="unbounded">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="parentalRating" type="xs:string" minOccurs="0" msdata:Ordinal="0" />
+													<xs:element name="watched" type="xs:string" minOccurs="0" msdata:Ordinal="1" />
+													<xs:element name="manualRecord" type="xs:string" minOccurs="0" msdata:Ordinal="2" />
+													<xs:element name="isHDTV" type="xs:string" minOccurs="0" msdata:Ordinal="4" />
+													<xs:element name="stereo" type="xs:string" minOccurs="0" msdata:Ordinal="5" />
+													<xs:element name="closedCaptioned" type="xs:string" minOccurs="0" msdata:Ordinal="6" />
+													<xs:element name="premierFinale" type="xs:string" minOccurs="0" msdata:Ordinal="7" />
+													<xs:element name="sap" type="xs:string" minOccurs="0" msdata:Ordinal="8" />
+													<xs:element name="recordSchedule" minOccurs="0" maxOccurs="unbounded">
+														<xs:complexType>
+															<xs:attribute name="duration" type="xs:integer" />
+															<xs:attribute name="startTime" type="xs:dateTime" />
+														</xs:complexType>
+													</xs:element>
+													<xs:element name="mediafile" minOccurs="0" maxOccurs="unbounded">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element name="archived" type="xs:string" minOccurs="0" msdata:Ordinal="0" />
+																<xs:element name="segmentList" minOccurs="0" maxOccurs="unbounded">
+																	<xs:complexType>
+																		<xs:sequence>
+																			<xs:element name="segment" minOccurs="0" maxOccurs="unbounded">
+																				<xs:complexType>
+																					<xs:attribute name="duration" type="xs:integer" />
+																					<xs:attribute name="filePath" type="xs:string" />
+																					<xs:attribute name="startTime" type="xs:dateTime" />
+																				</xs:complexType>
+																			</xs:element>
+																		</xs:sequence>
+																	</xs:complexType>
+																</xs:element>
+															</xs:sequence>
+															<xs:attribute name="duration" type="xs:integer" />
+															<xs:attribute name="sageDbId" type="xs:string" />
+															<xs:attribute name="startTime" type="xs:dateTime" />
+															<xs:attribute name="type" type="xs:string" />
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+												<xs:attribute name="channelId" type="xs:string" />
+												<xs:attribute name="duration" type="xs:integer" />
+												<xs:attribute name="sageDbId" type="xs:string" />
+												<xs:attribute name="startTime" type="xs:dateTime" />
+												<xs:attribute name="favoriteId" type="xs:string" />
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+									<xs:attribute name="epgId" type="xs:string" />
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+			<xs:attribute name="version" type="xs:string" />
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+		<xs:complexType>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element ref="sageShowInfo" />
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

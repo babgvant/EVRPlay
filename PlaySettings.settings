@@ -1,0 +1,171 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="babgvant.EVRPlay" GeneratedClassName="PlaySettings">
+  <Profiles />
+  <Settings>
+    <Setting Name="SkipForward1" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">60</Value>
+    </Setting>
+    <Setting Name="SkipBack1" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">30</Value>
+    </Setting>
+    <Setting Name="SkipForward2" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">20</Value>
+    </Setting>
+    <Setting Name="SkipBack2" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">10</Value>
+    </Setting>
+    <Setting Name="MaxInitialHeight" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">480</Value>
+    </Setting>
+    <Setting Name="MaxInitialWidth" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">720</Value>
+    </Setting>
+    <Setting Name="WriteLog" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="VideoAspectRatioMode" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="VideoRenderingPrefs" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="BorderColor" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="VideoProcessorMode" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="FSControlTimeout" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">10</Value>
+    </Setting>
+    <Setting Name="MouseSensitivity" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">20</Value>
+    </Setting>
+    <Setting Name="BlockedFilters" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;.ts;{564FD788-86C9-4444-971E-CC4A243DA150};ffdshow Video Decoder&lt;/string&gt;
+  &lt;string&gt;.ts;Haali Media Splitter;CyberLink Demux (PDVD7)&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="PreferredDecoders" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;.wmv;WMAudio Decoder DMO&lt;/string&gt;
+  &lt;string&gt;.ts;ArcSoft Video Decoder;{D5F9370B-E232-464F-BE29-A885B1249190}&lt;/string&gt;
+  &lt;string&gt;.ifo;Microsoft MPEG-2 Video Decoder&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="BookmarkDir" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="ReplacePaths" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;E:\Sage TV\;\\sageserver\Sage TV\&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="PublishGraph" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="FileHistory" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">10</Value>
+    </Setting>
+    <Setting Name="SingleInstance" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="OverscanWidth" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="OverscanHeight" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="SageWebserver" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://localhost:8080/sage/home</Value>
+    </Setting>
+    <Setting Name="SWUsername" Type="System.String" Scope="User">
+      <Value Profile="(Default)">sage</Value>
+    </Setting>
+    <Setting Name="SWPassword" Type="System.String" Scope="User">
+      <Value Profile="(Default)">frey</Value>
+    </Setting>
+    <Setting Name="BrowseOnLoad" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="WOLMac" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="BrowseAttempts" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">3</Value>
+    </Setting>
+    <Setting Name="NeedsUpgrade" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="Zoom" Type="System.Single" Scope="User">
+      <Value Profile="(Default)">2</Value>
+    </Setting>
+    <Setting Name="ZoomIncrement" Type="System.Single" Scope="User">
+      <Value Profile="(Default)">0.1</Value>
+    </Setting>
+    <Setting Name="MediaLaunch" Type="System.String" Scope="User">
+      <Value Profile="(Default)">/sagepublic/PlaylistGenerator?Command=generate&amp;pltype=pls&amp;fntype=filepath&amp;MediaFileId=$1</Value>
+    </Setting>
+    <Setting Name="SageRecording" Type="System.String" Scope="User">
+      <Value Profile="(Default)">/Recordings?xml=yes</Value>
+    </Setting>
+    <Setting Name="SageMedia" Type="System.String" Scope="User">
+      <Value Profile="(Default)">/Search?SearchString=&amp;searchType=MediaFiles&amp;Video=on&amp;DVD=on&amp;search_fields=title&amp;filename=.*&amp;regex=on&amp;TimeRange=0&amp;Categories=**Any**&amp;Channels=**Any**&amp;watched=any&amp;dontlike=any&amp;favorite=any&amp;firstruns=any&amp;hdtv=any&amp;archived=any&amp;manrec=any&amp;autodelete=any&amp;partials=none&amp;sort1=title_asc&amp;sort2=none&amp;grouping=None&amp;xml=yes</Value>
+    </Setting>
+    <Setting Name="CacheRecording" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">10</Value>
+    </Setting>
+    <Setting Name="CacheMedia" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="MBButtonWidth" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">250</Value>
+    </Setting>
+    <Setting Name="MBButtonHeight" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">150</Value>
+    </Setting>
+    <Setting Name="OpenMediaBrowser" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="PageSize" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">4</Value>
+    </Setting>
+    <Setting Name="UseDtbXml" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="PriorityClass" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="DtbXmlPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="MultiChannelWMA" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="DXVAWMV" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="CustomPresenter" Type="System.String" Scope="User">
+      <Value Profile="(Default)">5325DF1C-6F10-4292-B8FB-BE855F99F88A</Value>
+    </Setting>
+    <Setting Name="CustomPresenterEnabled" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="CustomAudioRender" Type="System.String" Scope="User">
+      <Value Profile="(Default)">{EC9ED6FC-7B03-4CB6-8C01-4EABE109F26B}</Value>
+    </Setting>
+    <Setting Name="UseCustomAudioRenderer" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="AudioPlaybackDevice" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="UseBookmarks" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
