@@ -1739,6 +1739,8 @@ namespace babgvant.EVRPlay
                                     hr = cpsett.SetBool(EVRCPSetting.USE_MF_TIME_CALC, mftime);
                                     hr = cpsett.GetInt(EVRCPSetting.FRAME_DROP_THRESHOLD, out range);
                                     hr = cpsett.SetInt(EVRCPSetting.FRAME_DROP_THRESHOLD, range+1);
+                                    hr = cpsett.GetBool(EVRCPSetting.EVRCP_SETTING_REQUEST_OVERLAY, out mftime);
+                                    hr = cpsett.SetBool(EVRCPSetting.EVRCP_SETTING_REQUEST_OVERLAY, false);
                                 }
                                 
                             }

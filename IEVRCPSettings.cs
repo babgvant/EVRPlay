@@ -28,7 +28,8 @@ namespace babgvant.EVRPlay
         SUBTITLE_ALPHA,
         USE_MF_TIME_CALC,
         FRAME_DROP_THRESHOLD,
-        EVRCP_SETTING_CORRECT_AR
+        EVRCP_SETTING_CORRECT_AR,
+        EVRCP_SETTING_REQUEST_OVERLAY
     }
 
     [ComImport, System.Security.SuppressUnmanagedCodeSecurity,
